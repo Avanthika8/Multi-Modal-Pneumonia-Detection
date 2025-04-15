@@ -1,0 +1,6 @@
+gradio
+tensorflow
+tensorflow-hub
+librosa
+Pillow
+numpy
