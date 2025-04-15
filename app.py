@@ -6,7 +6,7 @@ from PIL import Image
 import tensorflow_hub as hub
 
 # Load models
-image_model = tf.keras.models.load_model("kaggle_image_modal.keras")
+image_model = tf.keras.models.load_model("EffNetB0-Pneumonia-96_38.h5")
 audio_model = tf.keras.models.load_model("multiclass_audio_model.h5")
 yamnet_model = hub.load("https://tfhub.dev/google/yamnet/1")
 
