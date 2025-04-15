@@ -19,9 +19,10 @@ pneumonia_index = class_labels.index("Pneumonia")
 
 # Preprocessing functions
 def preprocess_image(img):
-    img = img.convert("L").resize(IMG_SIZE)
+    img = img.convert("RGB").resize((224, 224))  # Convert to 3-channel RGB
     img_array = np.array(img).astype("float32") / 255.0
-    return img_array.reshape(1, 256, 256, 1)
+    return img_array.reshape(1, 224, 224, 3)
+
 
 def preprocess_audio(audio_path):
     y, sr = librosa.load(audio_path, sr=SR)
