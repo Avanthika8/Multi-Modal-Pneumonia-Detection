@@ -1,20 +1,41 @@
-MULTI-MODAL PNEUMONIA DETECTION
-Developed a deep learning system combining chest X-ray and breathing audio to detect pneumonia. Utilized EfficientNetB0 and YAMNet models, with Gradio-based UI for real-time inference. Preprocessing included CLAHE, resizing, and audio embedding. Final diagnosis fused predictions from both modalities, improving accuracy and enabling edge deployment via Raspberry Pi.
-try running at : https://huggingface.co/spaces/AvanthikaKatari/Multi-modal_Pneumonia_Detection
+# 🧠 Multi-Modal Pneumonia Detection
 
+A deep learning system that combines **chest X-ray** and **breathing audio** inputs to accurately detect **pneumonia** using both image and audio modalities.
 
+🔗 **Try it live on Hugging Face Spaces:**  
+👉 [Multi-modal Pneumonia Detection Demo](https://huggingface.co/spaces/AvanthikaKatari/Multi-modal_Pneumonia_Detection)
 
 ---
-title: Multi-modal Pneumonia Detection
-emoji: 🐠
-colorFrom: indigo
-colorTo: blue
-sdk: gradio
-sdk_version: 5.25.1
-app_file: app.py
-pinned: false
-license: mit
-short_description: Major Project Deployment Testing
+
+## 🚀 Project Overview
+
+This project leverages the power of deep learning by combining two diagnostic sources:
+
+- **Chest X-ray images** processed via an EfficientNetB0 model.
+- **Respiratory audio recordings** analyzed using YAMNet and a custom multiclass classifier.
+
+The results from both modalities are fused using a weighted scoring mechanism to improve diagnostic accuracy, particularly for pneumonia detection.
+
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+## 🧩 Key Features
+
+- ✅ Multi-modal deep learning: Image + Audio
+- 📦 Gradio UI for real-time user interaction
+- 🔍 CLAHE and filtering for image enhancement
+- 🎧 YAMNet embeddings for audio processing
+- ⚡ Fused prediction score improves model reliability
+- 🖥️ Deployable on Raspberry Pi for edge inference
+- 🌐 Deployed and accessible via Hugging Face Spaces
+
+---
+
+## 🛠️ Tech Stack
+
+- **Languages:** Python
+- **Libraries:** TensorFlow, TensorFlow Hub, NumPy, Librosa, PIL, Gradio
+- **Models Used:** 
+  - EfficientNetB0 for X-ray classification
+  - YAMNet for audio embedding
+  - Custom CNN for audio classification
+- **Deployment:** Hugging Face Spaces, Gradio, Raspberry PI 4
