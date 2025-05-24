@@ -1,3 +1,9 @@
+MULTI-MODAL PNEUMONIA DETECTION
+Developed a deep learning system combining chest X-ray and breathing audio to detect pneumonia. Utilized EfficientNetB0 and YAMNet models, with Gradio-based UI for real-time inference. Preprocessing included CLAHE, resizing, and audio embedding. Final diagnosis fused predictions from both modalities, improving accuracy and enabling edge deployment via Raspberry Pi.
+try running at : https://huggingface.co/spaces/AvanthikaKatari/Multi-modal_Pneumonia_Detection
+
+
+
 ---
 title: Multi-modal Pneumonia Detection
 emoji: 🐠
